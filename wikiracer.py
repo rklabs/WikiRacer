@@ -56,9 +56,10 @@ class WikiRacer:
             # as and when it is completed
             for future in as_completed(futures):
                 try:
-                    # Fetch the result of future and update cache
-                    links = future.result()
-                    self.link_cache[node] = links
+                    if future.done():
+                        # Fetch the result of future and update cache
+                        links = future.result()
+                        self.link_cache[node] = links
                 except Exception as e:
                     self.link_cache[node] = []
                     log.error(e.reason)
