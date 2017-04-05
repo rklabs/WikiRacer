@@ -48,7 +48,7 @@ The WikiRacer works for all the tests inputs that I have tried.
 Results:
 ---------
 Below are the results on Ubuntu 16.04.2 LTS VM with 4 cores and 4GB RAM.
-The first example takes around 18 minutes. Rest of the examples few seconds 
+The first example takes around 18 minutes. Rest of the examples take few seconds 
 to few minutes.
 
 ```
